@@ -1,1 +1,74 @@
+berikut template kode HTML sederhana:
 
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f9f9f9; }
+        header { background-color: #2c3e50; color: white; text-align: center; padding: 20px 0; }
+        nav { background-color: #34495e; text-align: center; padding: 10px; }
+        nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
+        nav a:hover { color: #1abc9c; }
+        main { max-width: 800px; margin: 20px auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        .profil { text-align: center; margin-bottom: 30px; }
+        .profil img { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; }
+        .karya-container { display: flex; gap: 20px; justify-content: center; }
+        .kartu { border: 1px solid #ddd; padding: 15px; border-radius: 8px; width: 45%; text-align: center; background-color: #fafafa; }
+        .kartu a { display: inline-block; margin-top: 10px; padding: 8px 15px; background-color: #3498db; color: white; text-decoration: none; border-radius: 4px; }
+        footer { text-align: center; padding: 10px; margin-top: 20px; font-size: 0.9em; color: #666; }
+    </style>
+</head>
+<body>
+
+    <!-- Bagian Header -->
+    <header>
+        <h1>Portofolio Budi Santoso</h1>
+        <p>Siswa SMA | Pengembang Web Pemula</p>
+    </header>
+
+    <!-- Bagian Navigasi (Menu Link ke Halaman Lain) -->
+    <nav>
+        <a href="index.html">Profil</a>
+        <a href="blog.html">Blog Hobi</a>
+        <a href="mading.html">Mading Sekolah</a>
+    </nav>
+
+    <!-- Bagian Utama Konten -->
+    <main>
+        <!-- Profil Utama -->
+        <section class="profil">
+            <img src="https://via.placeholder.com/150" alt="Foto Profil">
+            <h2>Halo, Selamat Datang!</h2>
+            <p>Saya adalah siswa yang sedang belajar HTML dan CSS. Halaman ini adalah pusat portofolio saya, tempat saya membagikan karya dan proyek sekolah.</p>
+        </section>
+
+        <!-- Bagian Link ke Tema Lain -->
+        <section>
+            <h3 style="text-align: center;">Proyek Lainnya</h3>
+            <div class="karya-container">
+                <div class="kartu">
+                    <h4>Blog Hobi</h4>
+                    <p>Tulisan tentang hobi, film, dan game kesukaan saya.</p>
+                    <!-- Link menuju file HTML tema lain -->
+                    <a href="blog.html">Lihat Blog</a> 
+                </div>
+                <div class="kartu">
+                    <h4>Kampanye Lingkungan</h4>
+                    <p>Proyek P5 tentang pentingnya menjaga kebersihan sekolah.</p>
+                    <!-- Link menuju file HTML tema lain -->
+                    <a href="kampanye.html">Lihat Kampanye</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Bagian Kaki -->
+    <footer>
+        <p>&copy; 2026 Portofolio Budi Santoso. Dibuat dengan HTML & CSS.</p>
+    </footer>
+
+</body>
+</html>
